@@ -1,0 +1,108 @@
+<header>
+  <h1 id="title">Experiencia freeCodeCamp</h1>
+  <p id="description">
+    Te pido unos minutos para poder evaluar como fue tu experiencia con esta
+    plataforma en clases
+  </p>
+</header>
+<main>
+  <form method="POST" action="" id="survey-form">
+    <div class="form-group">
+      <h2 class="form-group-title">Sobre ti</h2>
+      <label for="name" id="name-label">Nombre </label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Ingresa tu nombre"
+        required
+      />
+      <label for="email" id="email-label">Email </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Ingresa tu correo institucional"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <h2 class="form-group-title">Sobre el curso</h2>
+      <label for="dropdown" id="experience-label">¿Como viene siendo tu
+        experiencia con el curso?
+      </label>
+      <select name="experience" id="dropdown" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="super">Super ✨</option>
+        <option value="buena">Buena 👍</option>
+        <option value="maso">Maso 🙄</option>
+        <option value="mala">Mala 🤐</option>
+      </select>
+      <label for="difficulty">¿Que es lo que más te costo hasta ahora?
+      </label>
+      <textarea
+        name="difficulty"
+        placeholder="Aca hay mucho espacio para escribir"
+        required
+      ></textarea>
+      <label for="number" id="number-label">¿En que módulo estás a la fecha?
+      </label>
+      <input
+        type="number"
+        name="module"
+        min="1"
+        max="5"
+        placeholder="Del 1 al 5"
+        id="number"
+        required
+      />
+      <label for="date" id="date-label">Ingresa la fecha </label>
+      <input type="date" name="date" required />
+      <div>
+        <p class="labeled-options">
+          ¿Que es lo que más te gusto hasta ahora?
+        </p>
+        <div class="form-group-checkbox">
+          <input type="checkbox" name="preferences" value="html" />
+          <label for="">HTML </label>
+        </div>
+        <div class="form-group-checkbox">
+          <input type="checkbox" name="preferences" value="css" />
+          <label for="">CSS </label>
+        </div>
+        <div class="form-group-checkbox">
+          <input type="checkbox" name="preferences" value="flexbox" />
+          <label for="">Flexbox </label>
+        </div>
+        <div class="form-group-checkbox">
+          <input type="checkbox" name="preferences" value="responsive" />
+          <label for="">Responsividad y diseño </label>
+        </div>
+        <div class="form-group-checkbox">
+          <input type="checkbox" name="preferences" value="animations" />
+          <label for=""> Animaciones </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <h2 class="form-group-title">Sobre tu forma de trabajo</h2>
+      <div class="">
+        <p class="labeled-options">¿Has usado VSC durante el curso?</p>
+        <div class="form-group-checkbox">
+          <input type="radio" name="vsc" value="yes" />
+          <label for="vsc">Si</label>
+        </div>
+        <div class="form-group-checkbox">
+          <input type="radio" name="vsc" value="no" />
+          <label for="vsc">No</label>
+        </div>
+      </div>
+      <label for="comments" id="comments-label">Deja un comentario </label>
+      <textarea name="comment" id="comments"></textarea>
+    </div>
+    <div>
+      <button type="submit" id="submit">Enviar</button>
+    </div>
+  </form>
+</main>
+<script src="/js/sendForm.js"></script>
